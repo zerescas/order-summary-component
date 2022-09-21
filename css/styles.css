@@ -6,26 +6,262 @@
 
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-semi-transparent: hsla(245, 75%, 52%, 0.25);
 
   /*
   Neutral Colors
   */
 
+  --light-pale-blue: hsla(228, 100%, 98%, 0.6);
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --white: #fff;
+  --black-semi-transparent: hsla(234, 80%, 71%, 0.2);
 
+  /* Common properties */
+
+  --card-border-radius: 1.35em;
+  --hover-filter: saturate(.35) brightness(2.1);
 }
 
-p {
-  font-size: 16px;
+body {
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--pale-blue);
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  flex: 1 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.95em;
+}
+
+.btn-link {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+
+.btn-link:hover {
+  color: var(--bright-blue);
+  text-decoration: none;
+  filter: var(--hover-filter)
+}
+
+.btn-submit {
+  font-weight: 700;
+  color: var(--white);
+  display: block;
+  margin-bottom: 2em;
+  padding: .85em;
+}
+
+.btn-submit::before {
+  background-color: var(--bright-blue);
+  border-radius: .75em;
+  box-shadow: 0 1em 20px var(--bright-blue-semi-transparent);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: 0.15s ease filter;
+}
+
+.btn-submit:hover::before {
+  filter: var(--hover-filter)
+}
+
+.btn-submit * {
+  position: relative;
+}
+
+.btn-cancel {
+  color: var(--desaturated-blue);
+  transition: 0.15s ease color;
+}
+
+.btn-cancel:hover {
+  color: unset;
+}
+
+.btn-cancel:hover {
+  color: unset;
+}
+
+/* Order Card */
+
+.order-card {
+  background-color: var(--white);
+  border-radius: var(--card-border-radius);
+  box-shadow: 0 2rem 45px var(--black-semi-transparent);
+  color: var(--dark-blue);
+  font-size: 1em;
+  margin: 1.5em;
+  max-width: 28.125em;
+  overflow: hidden;
+}
+
+/* Order Card inside  */
+
+.hero-img {
+  width: 100%;
+}
+
+/* Order Card content  */
+
+.order-card-content {
+  text-align: center;
+  padding: 2.7em 3em;
+}
+
+.order-header {
+  font-size: 1.75em;
+  font-weight: 900;
+  margin-bottom: .55em;
+}
+
+.order-description {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--desaturated-blue);
+  margin-bottom: 1.2em;
+}
+
+/* Selected Plan container */
+
+.selected-plan-container {
+  display: grid;
+  gap: 0em 1.15em;
+  grid-template-columns: 3em auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--light-pale-blue);
+  padding: 1.5em;
+  border-radius: .8em;
+  margin-bottom: 2.1em;
+}
+
+.icon-music {
+  grid-row: 1 / span 2;
+  width: 3em;
+}
+
+.selected-plan-name {
+  grid-row: 1;
+  grid-column: 2;
+  font-weight: 900;
+}
+
+.selected-plan-price {
+  grid-row: 2;
+  grid-column: 2;
+  color: var(--desaturated-blue);
+}
+
+.btn-change-plan {
+  grid-row: 1 / span 2;
+  justify-self: end;
+  align-self: center;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
 }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  position: relative;
+  color: var(--dark-blue);
+  font-size: .9rem;
+  font-weight: 700;
+  padding: 1.5em;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+.attribution a:hover {
+  text-decoration: none;
+  filter: var(--hover-filter);
+}
+
+/* Attribution Decorations */
+
+.top-left-decorator,
+.bottom-right-decorator {
+  border: solid 0.0625em var(--bright-blue);
+  width: 10%;
+  padding-top: 10%;
+  position: absolute;
+}
+
+.top-left-decorator {
+  border-bottom: 0;
+  border-right: 0;
+
+  top: 0;
+  left: 0;
+}
+
+.bottom-right-decorator {
+  border-top: 0;
+  border-left: 0;
+
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 460px) {
+
+  /* .order-card {
+    font-size: 0.95rem;
+  } */
+
+  .order-header {
+    font-size: 1.4em;
+  }
+
+  .order-card-content {
+    text-align: center;
+    padding: 2.5em 1.6em;
+  }
+
+  .selected-plan-container {
+    padding: 1.3em 1em;
+  }
+
+  .btn-change-plan {
+    font-size: .75em;
+  }
+
+  .selected-plan-name,
+  .selected-plan-price {
+    font-size: .9em;
+  }
+
 }

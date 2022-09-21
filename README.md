@@ -9,7 +9,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)\
+  - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
@@ -29,7 +29,10 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### What I learned
 
+<!-- <div> + <img> border-radius VS <div> overflow:hidden -->
+
 <!-- CSS Reset -->
+Few words about CSS Reset...
 
 <!-- vh vs 100% in html, body -->
 ```css
