@@ -15,6 +15,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
     - [border-radius vs. overflow: hidden](#border-radius-vs-overflow-hidden)
     - [100vh vs. 100% in html, body](#100vh-vs-100-in-html-body)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -122,3 +123,10 @@ This still works on desktop and now on mobile we get real estate of a browser's 
 
 - Twitter - [https://twitter.com/zerescas](https://twitter.com/zerescas)
 - Telegram - [https://t.me/zerescas](https://t.me/zerescas)
+
+## Acknowledgments
+
+Thanks to [Aviral](https://www.frontendmentor.io/profile/Akunamo) for the [tip](https://www.frontendmentor.io/solutions/order-summary-component-with-flexbox-and-grid-XGlPOXPXuA#comment-632aa9ed037479dfd70fa4bb):
+- Replace two <strong>div</strong> in <strong>footer</strong> content to ::before, ::after 
+
+![](/images/screenshots/fix-before-after.png)
