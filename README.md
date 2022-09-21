@@ -97,7 +97,7 @@ body {
 } 
 ```
 
-This works fine only on desktop, but there's trouble on mobile (GUI of a browser overlaps of webpage)
+This works fine only on desktop, but there's trouble on mobile (GUI of a browser overlaps a webpage)
 ![body-only-in-vh](/images/gif/body-only-in-vh.gif)
 
 2. Setup <strong>html</strong> and <strong>body</strong>
