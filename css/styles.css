@@ -239,7 +239,7 @@ footer {
   right: 0;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 28.75rem) {
 
   .order-card-content {
     text-align: center;
@@ -261,6 +261,24 @@ footer {
 
   .btn-change-plan {
     font-size: .75em;
+  }
+
+}
+
+@media screen and (max-width: 21.875rem) {
+
+  .selected-plan-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .selected-plan-container *:last-child {
+    margin-top: .5em;
+  }
+
+  .attribution {
+    font-size: .8rem;
   }
 
 }
