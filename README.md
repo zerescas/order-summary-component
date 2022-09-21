@@ -50,7 +50,6 @@ Users should be able to:
   - Grid
 
 ### What I learned
-<br>
 
 #### CSS Reset
 
