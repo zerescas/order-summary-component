@@ -161,6 +161,8 @@ main {
   margin-bottom: 2.1em;
 }
 
+/* Selected Plan content */
+
 .icon-music {
   grid-row: 1 / span 2;
   width: 3em;
@@ -238,30 +240,26 @@ footer {
 
 @media screen and (max-width: 460px) {
 
-  /* .order-card {
-    font-size: 0.95rem;
-  } */
-
-  .order-header {
-    font-size: 1.4em;
-  }
-
   .order-card-content {
     text-align: center;
     padding: 2.5em 1.6em;
+  }
+
+  .order-header {
+    font-size: 1.4em;
   }
 
   .selected-plan-container {
     padding: 1.3em 1em;
   }
 
-  .btn-change-plan {
-    font-size: .75em;
-  }
-
   .selected-plan-name,
   .selected-plan-price {
     font-size: .9em;
+  }
+
+  .btn-change-plan {
+    font-size: .75em;
   }
 
 }
