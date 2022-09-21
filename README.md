@@ -98,7 +98,7 @@ body {
 ```
 
 This works fine only on desktop, but there's trouble on mobile (GUI of a browser overlaps of webpage)
-video/body-only-in-vh.mp4
+![body-only-in-vh](/images/gif/body-only-in-vh.gif)
 
 2. Setup <strong>html</strong> and <strong>body</strong>
 
@@ -110,7 +110,7 @@ body {
 ```
 
 This still works on desktop and now on mobile we get real estate of a browser's viewport.
-video/html-and-body-in-percentages.mp4
+![html-and-body-in-percentages](/images/gif/html-and-body-in-percentages.gif)
 
 ### Useful resources
 
