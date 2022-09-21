@@ -126,6 +126,9 @@ This still works on desktop and now on mobile we get real estate of a browser's 
 ## Acknowledgments
 
 Thanks to [Aviral](https://www.frontendmentor.io/profile/Akunamo) for the [tip](https://www.frontendmentor.io/solutions/order-summary-component-with-flexbox-and-grid-XGlPOXPXuA#comment-632aa9ed037479dfd70fa4bb):
-- Replace two <strong>div</strong> in <strong>footer</strong> content to ::before, ::after 
+  - Replace two <strong>div</strong> in <strong>footer</strong> content to ::before, ::after 
 
 ![](/images/screenshots/fix-before-after.png)
+
+Thanks to [Lucas](https://www.frontendmentor.io/profile/correlucas) for the [tip](https://www.frontendmentor.io/solutions/order-summary-component-with-flexbox-and-grid-XGlPOXPXuA):
+  - Make selected-plan-container readable and more responsible below width of 350px. 
