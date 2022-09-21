@@ -51,11 +51,10 @@ Users should be able to:
   - Grid
 
 ### What I learned
-<br>
 
 #### CSS Reset
 
-The original purpose to use "CSS Reset" is "reduce browser inconsistencies" seems is a little obsolete because a total domination of Google Chrome and death of all browser engines except of Blink(Chrome and Chromium based browsers), Webkit(Safari) and Quantum(Firefox with ~3% of the market share). Now the main purpose to define global rules to get more logical and predictable behaviour of HTML elements.     
+The original purpose to use "CSS Reset" is "reduce browser inconsistencies" seems is a little obsolete because a total domination of Google Chrome and death of all browser engines except of Blink(Chrome and Chromium based browsers), Webkit(Safari) and Quantum(Firefox with ~3% of the market share). Now the main purpose is to define global rules to get more logical and predictable behaviour of HTML elements.
 <br>
 
 #### border-radius vs. overflow: hidden
